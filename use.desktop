@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Script manager
+Exec=use
+Terminal=true
+Type=Application
+Categories=Utility;
+
