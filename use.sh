@@ -1,19 +1,19 @@
 #!/bin/bash
 # This file is public domain.
 #
-# This tiny utility can be 
+# This is an interactive command line utility to handle scripts and
+# use cases (an use case is a scripts that opens everything needed for
+# the user to perform a task).
 #
-# This is an interactive command you can place on your desktop, menu
-# or wherever.
+# In order to allow any programming language, your script must have
+# a sha-bang (#!) line. If you want it to start a GUI, you can use 
+# nohup in the command line. Using nohup in the sha-bang has the
+# potential unwanted effects of exploding (if you forget to put the
+# name of the shell after the word 'nohup') or scattering nohup.out
+# files all over the place (if you start it from different places),
+# so it's discouraged.
 #
-# The scripts you manage with this should have a proper sha-bang (#!)
-# line. If you want this to start a GUI, you can use nohup in the
-# command line. Using nohup in the sha-bang has the potential unwanted
-# effects of exploding (if you forget to put the name of the shell
-# after the word 'nohup') or scattering nohup.out files all over the
-# place (if you start it from different places), so it's discouraged.
-#
-# The environment variables affecting this are:
+# The environment variables affecting this program are:
 #  $USE_DIR: The directory to store (and read) the scripts. By
 #    default, it is '~/.userc'.
 #  $EDITOR: The text editor to edit the scripts. By default, it is
