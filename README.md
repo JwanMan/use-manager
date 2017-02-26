@@ -8,11 +8,12 @@ Installation
 
 This program runs on every UNIX-like operating system (such as Linux) that has the Bourne-Again Shell (bash) installed.
 
-To install it, clone this repo, copy the `use` file somewhere on your path and, if you want to access from the desktop, copy the `use.desktop` file to `/usr/share/applications`. In other words:
+To install it, clone this repo, copy the `use` file somewhere on your path and, if you want to access from the desktop, copy the `use.desktop` file to `/usr/share/applications`. Remember to give execute permission to `use`. In other words:
 ```
 cd `mktemp -d`
 git clone https://github.com/JwanMan/use-manager.git
 cd use-manager
+chmod +x use
 mv use /usr/local/bin/
 mv use.desktop /usr/share/applications/
 ```
